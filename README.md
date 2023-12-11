@@ -1,4 +1,11 @@
 # The Land is Flat
+
+
+
+<div style="text-align: center;">
+  <img src="..\The-Land-is-Flat\icon.svg" alt="Logo of The Land is Flat" width="100" height="auto">
+</div>
+
 ## By [Zhean Ganituen](github.com/Z1aaan), [CRATE]()*
 
 [GitHub Page](https://github.com/Z1aaan/The-Land-is-Flat) &nbsp; | [Steam]()* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| [Website]()* 
