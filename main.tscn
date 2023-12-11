@@ -1,0 +1,98 @@
+[gd_scene load_steps=3 format=3 uid="uid://6r3ekpmcpa6d"]
+
+[ext_resource type="FontFile" uid="uid://5cdnu6y8p2a1" path="res://src/Montserrat-Regular.ttf" id="1_wjyus"]
+[ext_resource type="Texture2D" uid="uid://dcxdvwqps4q3h" path="res://img/bg_16161d.png" id="2_lykn8"]
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="Foreground" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="Text" type="Node2D" parent="Foreground"]
+
+[node name="TitleMain" type="Label" parent="Foreground/Text"]
+offset_left = 101.0
+offset_top = 140.0
+offset_right = 663.0
+offset_bottom = 229.0
+scale = Vector2(0.996368, 1)
+theme_override_fonts/font = ExtResource("1_wjyus")
+theme_override_font_sizes/font_size = 72
+text = "The Land is Flat"
+
+[node name="SubtitleTop" type="Label" parent="Foreground/Text"]
+offset_left = 101.0
+offset_top = 99.0
+offset_right = 667.0
+offset_bottom = 138.0
+scale = Vector2(0.996368, 1)
+theme_override_fonts/font = ExtResource("1_wjyus")
+theme_override_font_sizes/font_size = 31
+text = "hm________________________________"
+
+[node name="SubtitleBot" type="Label" parent="Foreground/Text"]
+offset_left = 100.0
+offset_top = 203.0
+offset_right = 677.0
+offset_bottom = 242.0
+scale = Vector2(0.996368, 1)
+theme_override_fonts/font = ExtResource("1_wjyus")
+theme_override_font_sizes/font_size = 31
+text = "___________________________________?"
+
+[node name="Buttons" type="Node2D" parent="Foreground"]
+
+[node name="ButtonPlay" type="Button" parent="Foreground/Buttons"]
+offset_left = 146.0
+offset_top = 261.0
+offset_right = 519.0
+offset_bottom = 359.0
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("1_wjyus")
+theme_override_font_sizes/font_size = 32
+text = "I think I want to play?"
+alignment = 0
+vertical_icon_alignment = 0
+
+[node name="ButtonOptions" type="Button" parent="Foreground/Buttons"]
+offset_left = 146.0
+offset_top = 323.0
+offset_right = 601.0
+offset_bottom = 421.0
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("1_wjyus")
+theme_override_font_sizes/font_size = 32
+text = "What are the gane options?"
+alignment = 0
+vertical_icon_alignment = 0
+
+[node name="ButttonCredits" type="Button" parent="Foreground/Buttons"]
+offset_left = 146.0
+offset_top = 384.0
+offset_right = 519.0
+offset_bottom = 482.0
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("1_wjyus")
+theme_override_font_sizes/font_size = 32
+text = "Can I know who made this game?"
+alignment = 0
+vertical_icon_alignment = 0
+
+[node name="ButtonExit" type="Button" parent="Foreground/Buttons"]
+offset_left = 146.0
+offset_top = 446.0
+offset_right = 700.0
+offset_bottom = 544.0
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("1_wjyus")
+theme_override_font_sizes/font_size = 32
+text = "I think I am done playing the game?"
+alignment = 0
+vertical_icon_alignment = 0
+
+[node name="Background" type="CanvasLayer" parent="."]
+
+[node name="bgImage" type="TextureRect" parent="Background"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_lykn8")
