@@ -3,7 +3,7 @@
 
 
 <div style="text-align: center;">
-  <img src="..\The-Land-is-Flat\icon.svg" alt="Logo of The Land is Flat" width="100" height="auto">
+  <img src="icon.svg" alt="Logo of The Land is Flat" width="100" height="auto">
 </div>
 
 ## By [Zhean Ganituen](github.com/Z1aaan), [CRATE]()*
