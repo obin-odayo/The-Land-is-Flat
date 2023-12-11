@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3kobcug3y2pv"]
+
+[ext_resource type="Texture2D" uid="uid://dcxdvwqps4q3h" path="res://img/bg_16161d.png" id="1_soria"]
+
+[node name="Background" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture = ExtResource("1_soria")

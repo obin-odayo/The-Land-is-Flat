@@ -1,16 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://6r3ekpmcpa6d"]
+[gd_scene load_steps=4 format=3 uid="uid://b7aeln451vyiv"]
 
+[ext_resource type="Script" path="res://main.gd" id="1_w2ir3"]
 [ext_resource type="FontFile" uid="uid://5cdnu6y8p2a1" path="res://src/Montserrat-Regular.ttf" id="1_wjyus"]
 [ext_resource type="Texture2D" uid="uid://dcxdvwqps4q3h" path="res://img/bg_16161d.png" id="2_lykn8"]
 
 [node name="MainMenu" type="Node2D"]
 
-[node name="Foreground" type="CanvasLayer" parent="."]
-layer = 2
-
-[node name="Text" type="Node2D" parent="Foreground"]
-
-[node name="TitleMain" type="Label" parent="Foreground/Text"]
+[node name="TitleMain" type="Label" parent="."]
 offset_left = 101.0
 offset_top = 140.0
 offset_right = 663.0
@@ -20,7 +16,7 @@ theme_override_fonts/font = ExtResource("1_wjyus")
 theme_override_font_sizes/font_size = 72
 text = "The Land is Flat"
 
-[node name="SubtitleTop" type="Label" parent="Foreground/Text"]
+[node name="SubtitleTop" type="Label" parent="."]
 offset_left = 101.0
 offset_top = 99.0
 offset_right = 667.0
@@ -30,7 +26,7 @@ theme_override_fonts/font = ExtResource("1_wjyus")
 theme_override_font_sizes/font_size = 31
 text = "hm________________________________"
 
-[node name="SubtitleBot" type="Label" parent="Foreground/Text"]
+[node name="SubtitleBot" type="Label" parent="."]
 offset_left = 100.0
 offset_top = 203.0
 offset_right = 677.0
@@ -40,37 +36,36 @@ theme_override_fonts/font = ExtResource("1_wjyus")
 theme_override_font_sizes/font_size = 31
 text = "___________________________________?"
 
-[node name="Buttons" type="Node2D" parent="Foreground"]
-
-[node name="ButtonPlay" type="Button" parent="Foreground/Buttons"]
+[node name="ButtonPlay" type="Button" parent="."]
 offset_left = 146.0
 offset_top = 261.0
 offset_right = 519.0
-offset_bottom = 359.0
+offset_bottom = 349.0
 theme_type_variation = &"FlatButton"
 theme_override_fonts/font = ExtResource("1_wjyus")
 theme_override_font_sizes/font_size = 32
 text = "I think I want to play?"
 alignment = 0
 vertical_icon_alignment = 0
+script = ExtResource("1_w2ir3")
 
-[node name="ButtonOptions" type="Button" parent="Foreground/Buttons"]
+[node name="ButtonOptions" type="Button" parent="."]
 offset_left = 146.0
-offset_top = 323.0
+offset_top = 325.0
 offset_right = 601.0
-offset_bottom = 421.0
+offset_bottom = 413.0
 theme_type_variation = &"FlatButton"
 theme_override_fonts/font = ExtResource("1_wjyus")
 theme_override_font_sizes/font_size = 32
-text = "What are the gane options?"
+text = "What are the game options?"
 alignment = 0
 vertical_icon_alignment = 0
 
-[node name="ButttonCredits" type="Button" parent="Foreground/Buttons"]
+[node name="ButttonCredits" type="Button" parent="."]
 offset_left = 146.0
-offset_top = 384.0
-offset_right = 519.0
-offset_bottom = 482.0
+offset_top = 389.0
+offset_right = 700.0
+offset_bottom = 477.0
 theme_type_variation = &"FlatButton"
 theme_override_fonts/font = ExtResource("1_wjyus")
 theme_override_font_sizes/font_size = 32
@@ -78,11 +73,11 @@ text = "Can I know who made this game?"
 alignment = 0
 vertical_icon_alignment = 0
 
-[node name="ButtonExit" type="Button" parent="Foreground/Buttons"]
+[node name="ButtonExit" type="Button" parent="."]
 offset_left = 146.0
-offset_top = 446.0
-offset_right = 700.0
-offset_bottom = 544.0
+offset_top = 453.0
+offset_right = 736.0
+offset_bottom = 541.0
 theme_type_variation = &"FlatButton"
 theme_override_fonts/font = ExtResource("1_wjyus")
 theme_override_font_sizes/font_size = 32
@@ -90,9 +85,17 @@ text = "I think I am done playing the game?"
 alignment = 0
 vertical_icon_alignment = 0
 
-[node name="Background" type="CanvasLayer" parent="."]
+[node name="Background" type="ParallaxBackground" parent="."]
 
-[node name="bgImage" type="TextureRect" parent="Background"]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Background"]
+position = Vector2(640, 360)
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/ParallaxLayer"]
 texture = ExtResource("2_lykn8")
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="ButtonPlay" to="ButtonPlay" method="_on_button_play_pressed"]
+[connection signal="pressed" from="ButtonOptions" to="ButtonPlay" method="_on_button_options_pressed"]
+[connection signal="pressed" from="ButttonCredits" to="ButtonPlay" method="_on_buttton_credits_pressed"]
+[connection signal="pressed" from="ButtonExit" to="ButtonPlay" method="_on_button_exit_pressed"]
