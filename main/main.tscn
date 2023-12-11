@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b7aeln451vyiv"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_w2ir3"]
+[ext_resource type="Script" path="res://main/main.gd" id="1_w2ir3"]
 [ext_resource type="FontFile" uid="uid://5cdnu6y8p2a1" path="res://src/Montserrat-Regular.ttf" id="1_wjyus"]
 [ext_resource type="Texture2D" uid="uid://dcxdvwqps4q3h" path="res://img/bg_16161d.png" id="2_lykn8"]
 
