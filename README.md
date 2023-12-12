@@ -8,7 +8,7 @@
 
 ## By [Zhean Ganituen](github.com/Z1aaan), [CRATE]()*
 
-[GitHub Page](https://github.com/Z1aaan/The-Land-is-Flat) &nbsp; | [Steam]()* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| [Website]()* 
+[GitHub Page](https://github.com/Z1aaan/The-Land-is-Flat) &nbsp; | [Itch.io]()* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| [Website]()* 
 
 [About CRATE]() &nbsp;| [About Zhean](https://z1aaan.github.io/Z1aaan/) | [His Github](https://github.com/Z1aaan)
 
@@ -24,8 +24,10 @@ Explore the Land as a 2-dimensional being walking around the world, making frien
 
 This game was created on Godot using C, Godot, GDScript, and Blender.
 
-## Download on [Steam]()*.
-Support CRATE by downloading the game on Steam now!
+### [See the Docs]()*
+
+### Download on [Itch.io]()*.
+Support CRATE by downloading the game on Itch.io now!
 
 ## How the Game is Created
 > To come later on...
