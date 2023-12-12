@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bpgkpuy8b1k1w"]
+[gd_scene load_steps=5 format=3 uid="uid://cj7xptl35r1m5"]
 
 [ext_resource type="PackedScene" uid="uid://bes2ufmc3jfxf" path="res://game/player/player.tscn" id="1_fvt4u"]
+[ext_resource type="Script" path="res://game/scene_1/Floor.gd" id="2_ny0eo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1d5pu"]
 size = Vector2(368, 49)
@@ -10,30 +11,34 @@ size = Vector2(8, 432.5)
 
 [node name="scene_1" type="Node2D"]
 
-[node name="Panel" type="Panel" parent="."]
-offset_top = 48.0
-offset_right = 360.0
-offset_bottom = 384.0
-
 [node name="Player" parent="." instance=ExtResource("1_fvt4u")]
+z_index = 1
 position = Vector2(112, -24)
 
-[node name="Walls" type="Node2D" parent="."]
+[node name="Environment" type="Node2D" parent="."]
 
-[node name="bottomWall" type="StaticBody2D" parent="Walls"]
+[node name="Walls" type="Node2D" parent="Environment"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/bottomWall"]
+[node name="bottomWall" type="StaticBody2D" parent="Environment/Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Walls/bottomWall"]
 position = Vector2(184, 408.5)
 shape = SubResource("RectangleShape2D_1d5pu")
 
-[node name="topWall" type="StaticBody2D" parent="Walls"]
+[node name="topWall" type="StaticBody2D" parent="Environment/Walls"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/topWall"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Walls/topWall"]
 position = Vector2(184, 24)
 shape = SubResource("RectangleShape2D_1d5pu")
 
-[node name="LeftWall" type="StaticBody2D" parent="Walls"]
+[node name="LeftWall" type="StaticBody2D" parent="Environment/Walls"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/LeftWall"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Walls/LeftWall"]
 position = Vector2(364, 215.75)
 shape = SubResource("RectangleShape2D_hc6wy")
+
+[node name="Floor" type="Panel" parent="Environment"]
+offset_top = 48.0
+offset_right = 360.0
+offset_bottom = 384.0
+script = ExtResource("2_ny0eo")
