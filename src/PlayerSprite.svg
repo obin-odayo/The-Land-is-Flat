@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 16.933333 16.933333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="PlayerSprite.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="7.7506363"
+     inkscape:cx="26.062376"
+     inkscape:cy="23.352921"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="star"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.254064"
+       id="path6"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="0"
+       sodipodi:cy="3.3795612"
+       sodipodi:r1="4.8137989"
+       sodipodi:r2="2.4068992"
+       sodipodi:arg1="0.94147866"
+       sodipodi:arg2="1.9886762"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="M 2.8333697,7.2711773 C 2.159322,7.7619314 -4.6989417,4.7166427 -4.7869233,3.8875232 -4.8749049,3.0584038 1.1915243,-1.3583824 1.9535536,-1.020017 2.7155829,-0.68165159 3.5074174,6.7804233 2.8333697,7.2711773 Z"
+       inkscape:transform-center-x="1.4567806"
+       inkscape:transform-center-y="-0.42486287"
+       transform="matrix(1.9680039,0,0,1.9680039,10.139097,2.2813324)" />
+  </g>
+</svg>
