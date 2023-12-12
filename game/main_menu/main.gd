@@ -10,7 +10,7 @@ func _on_button_play_pressed():
 	# when play is pressed
 	# start at the first scene of the game
 	
-	# format: get_tree().change_scene_to_file("res://<main>.tscn")
+	get_tree().change_scene_to_file("res://game/scene_1/scene_1.tscn")
 	pass # Replace with function body.
 
 func _on_button_options_pressed():
