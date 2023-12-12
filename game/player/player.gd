@@ -10,7 +10,6 @@ extends CharacterBody2D
 @onready var anim = get_node("AnimationPlayer")
 
 const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -18,23 +17,29 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 
 func _physics_process(delta):
-	# Add the gravity.
-	if not is_on_floor():
-		velocity.y += gravity * delta
-
-	# Handle jump.
-	if Input.is_action_just_pressed("MoveUp") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
-	# Get the input direction and handle the movement/deceleration.
-	var direction = Input.get_axis("MoveLeft", "MoveRight")
+	# no gravity for this character since it's in isometric view of a flat land.
 	
 	# move player depending on which button is pressed.
-	if direction:
-		velocity.x = direction * SPEED
+	# if a movement key is pressed rotate the animation based on the movement key pressed.
+	if Input.is_action_pressed("MoveLeft"):
+		# if "A" is pressed move the character to the left based on the negative of speed.
+		# negative because in the (x,y) plane to move to the left we need to move in the negative direction.
+		velocity.x = -1 * SPEED
 		anim.play("Walk")
+	elif Input.is_action_pressed("MoveRight"):
+		# if "D" is pressed move the character to the right.
+		velocity.x = 1 * SPEED
+		anim.play("Walk")
+	elif Input.is_action_pressed("MoveUp"):
+		# if "W" is pressed move the character to the up.
+		velocity.y = -1 * SPEED
+	elif Input.is_action_pressed("MoveDown"):
+		# if "S" is pressed move the character to the down.
+		velocity.y = 1 * SPEED
 	else:
+		# if no buttons are pressed make x and y velocity 0 and play Idle.
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.y = move_toward(velocity.y, 0, SPEED)
 		anim.play("Idle")
 
 	move_and_slide()
