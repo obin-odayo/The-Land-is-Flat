@@ -13,7 +13,7 @@ size = Vector2(8, 432.5)
 
 [node name="Player" parent="." instance=ExtResource("1_fvt4u")]
 z_index = 1
-position = Vector2(112, -24)
+position = Vector2(336, 80)
 
 [node name="Environment" type="Node2D" parent="."]
 
