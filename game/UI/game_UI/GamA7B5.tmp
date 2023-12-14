@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqdl5k375s3ks"]
+
+[ext_resource type="Script" path="res://game/UI/game_UI/TextBox.gd" id="1_twey1"]
+
+[node name="GameUI" type="Node2D"]
+
+[node name="TextBox" type="Label" parent="."]
+offset_left = 64.0
+offset_right = 255.0
+offset_bottom = 128.0
+scale = Vector2(1.00446, 1)
+theme_override_font_sizes/font_size = 16
+script = ExtResource("1_twey1")
+
+[node name="InteractButton" type="Button" parent="."]
+offset_right = 56.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 10
+text = "Interact"
+alignment = 0

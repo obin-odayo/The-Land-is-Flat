@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxiwrk1bv5x6q"]
+
+[ext_resource type="Texture2D" uid="uid://dtea1kaurgd32" path="res://game/levels/scene_1/assets/clockSprite.png" id="1_lixxl"]
+[ext_resource type="Script" path="res://game/levels/scene_1/assets/clock.gd" id="1_ucuoq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_36her"]
+radius = 8.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sk4ha"]
+radius = 75.26
+
+[node name="Clock" type="CharacterBody2D"]
+
+[node name="ClockCollision" type="CollisionShape2D" parent="."]
+scale = Vector2(1.28, 1.28)
+shape = SubResource("CircleShape2D_36her")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-4.76837e-07, 0)
+scale = Vector2(0.0390625, 0.0384522)
+texture = ExtResource("1_lixxl")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("1_ucuoq")
+
+[node name="PlayerDetection" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(1.28, 1.28)
+shape = SubResource("CircleShape2D_sk4ha")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
