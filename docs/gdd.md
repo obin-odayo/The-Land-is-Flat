@@ -15,8 +15,10 @@
 
 ---
 
+### Table of Contents
+
 <details>
-<summary style="font-size: 32pt; font-weight: bold">Table of Contents</summary>
+<summary></summary>
 
 [**Introduction**](#1)  
 ___[Background](#1.1)  
