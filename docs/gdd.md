@@ -8,7 +8,7 @@
 |-------------------------|---------|
 | [Zhean Robby L. Ganituen](github.io/obin-odayo) | CRATE   |
 ---
-**Abstract**: The first game developed by CRATE. The Land is Flat is a adventure walking simulator game, played from a two-dimensional isometric view of a two-dimensional triangle being, Pyt, and their surroundings. The game tells a story on existence and reality of Pyt as he wonders along and explores the two-dimensional land. This paper aims to explore the game design and development of the The Land is Flat. This goes in-depth with the background of the game, the method and creative process, and technical details on the work.   
+**Abstract**: The first game developed by CRATE. The Land is Flat is a adventure walking simulator game, played from a two-dimensional isometric view of a two-dimensional triangle being, Pyth, and their surroundings. The game tells a story on existence and reality of Pyth as he wonders along and explores the two-dimensional land. This paper aims to explore the game design and development of the The Land is Flat. This goes in-depth with the background of the game, the method and creative process, and technical details on the work.   
 <sub><sup>*Keywords*: Walking Simulator Game; Game Development. </sup></sub>
 
 [GitHub Repository](https://github.com/obin-odayo/The-Land-is-Flat) | [Itch.io]()
