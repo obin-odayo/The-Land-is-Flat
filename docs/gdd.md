@@ -16,7 +16,7 @@
 ---
 
 <details>
-<summary style="font-size: 1.17em; font-weight: bold">Table of Contents</summary>
+<summary style="font-size: 32pt; font-weight: bold">Table of Contents</summary>
 
 [**Introduction**](#1)  
 ___[Background](#1.1)  
@@ -54,7 +54,7 @@ ___[Environments](#6.3)
 ### Version Control:
 
 Version: 0.0.1 (Draft)
-Last updated: December 13, 2023   
+Last updated: December 14, 2023   
 By: Zhean Robby L. Ganituen
 
 ---
